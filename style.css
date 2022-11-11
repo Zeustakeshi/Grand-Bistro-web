@@ -1,0 +1,434 @@
+/* font-family: 'Mr Dafoe', cursive; */
+/* Reset Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins";
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 222px;
+}
+
+.header-logo {
+    padding: 10px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 21.9217px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    max-width: 80px;
+    color: #ffffff;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav > li > a {
+    min-height: 65px;
+    padding: 25px 24px;
+    border: 2px solid #ffffff;
+
+    border-top: transparent;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.header-nav > li + li {
+    border-left: transparent;
+}
+
+/* Banner */
+#banner {
+    min-height: 677px;
+    background-image: url(./assets/banner.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    padding: 0px 300px;
+}
+
+#banner > p:first-child {
+    font-family: "Mr Dafoe";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 95%;
+    color: #ffffff;
+    margin-top: 180px;
+}
+
+#banner > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 101.662px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 372px;
+}
+
+#banner > p:last-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+/* About-us */
+#about-us {
+    padding: 81px 75px;
+    color: #ffffff;
+    background: #0b1517;
+    max-width: 847px;
+    min-height: 662px;
+    margin: -168px auto 142px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.about-us-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    margin-bottom: 45px;
+}
+
+.about-us-content {
+    display: flex;
+    gap: 68px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 154%;
+    letter-spacing: -0.04em;
+}
+
+.about-us-content > p:first-child {
+    max-width: 276px;
+}
+
+.about-us-content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us-content > div > p:first-child {
+    margin-bottom: 70px;
+}
+
+.about-us-content > div > p:last-child {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 154%;
+    text-align: center;
+}
+
+.about-us-content > div > p:last-child::before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #ffffff;
+    margin: auto 0;
+    margin-right: 10px;
+    max-width: 40px;
+}
+
+/* Food */
+#food {
+    background-image: url("./assets/background-food.svg");
+    background-repeat: no-repeat;
+    height: 408px;
+    position: relative;
+    margin-bottom: 646px;
+}
+
+#food .img-large {
+    position: absolute;
+    top: -296px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 698px;
+    height: 440px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#food .food-1 {
+    position: absolute;
+    left: 0;
+    top: 51%;
+}
+#food .food-2 {
+    position: absolute;
+    top: 88%;
+    left: 104px;
+}
+
+#food .food-3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#food .food-4 {
+    position: absolute;
+    top: -24px;
+    right: 0;
+}
+
+#food .food-5 {
+    position: absolute;
+    bottom: -288px;
+    right: 123px;
+}
+
+/* Menu */
+#menu {
+    position: relative;
+    padding: 0px 296px;
+    background-image: url("./assets/background-menu.svg");
+    height: 670px;
+}
+
+#menu .container {
+    position: absolute;
+    top: -318px;
+}
+
+#menu .title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 95%;
+    letter-spacing: 0.005em;
+    color: #0f1617;
+    margin-bottom: 45px;
+}
+
+#menu .content {
+    display: flex;
+    gap: 20px;
+}
+
+#menu .menu-img {
+    width: 197px;
+    height: 367px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 95%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+}
+
+#menu .menu-img:nth-child(even) {
+    margin-top: 66px;
+}
+
+#menu .menu-1 {
+    background-image: url("./assets/menu-1.svg");
+}
+
+#menu .menu-2 {
+    background-image: url("./assets/menu-2.svg");
+}
+#menu .menu-3 {
+    background-image: url("./assets/menu-3.svg");
+}
+#menu .menu-4 {
+    background-image: url("./assets/menu-4.svg");
+}
+
+/* Reservation */
+
+#reservation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+#reservation .map {
+    background-image: url("./assets/map.svg");
+    width: 628px;
+    height: 531px;
+    margin-left: 251px;
+}
+#reservation .content {
+    width: 441px;
+    height: 329px;
+    background: #0b1517;
+    color: #ffffff;
+    padding: 45px;
+    transform: translateX(-50%);
+}
+
+#reservation .brand {
+    padding: 0 10px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+#reservation .brand .title {
+    font-weight: 700;
+    font-size: 72.8897px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#reservation .brand .desc {
+    font-weight: 500;
+    font-size: 15.7736px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+#reservation .address {
+    border-top: 1px solid #fff;
+    padding: 20px 10px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: -0.04em;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid #0b1517;
+    border-radius: 20px;
+    padding: 72px 60px;
+    gap: 66px;
+    max-width: 1096px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+#footer .logo {
+    font-weight: 700;
+    font-size: 72.8897px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0b1517;
+    max-width: 266px;
+}
+
+#footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .content .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: 50px;
+}
+
+#footer .content .nav > li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: -0.04em;
+    color: #0b1517;
+}
+
+#footer .content .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#footer .content .btn-group button {
+    padding: 17px 32px;
+    border: 2px solid #0b1517;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: -0.04em;
+    color: #0b1517;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#footer .content .btn-group button:hover {
+    background: #0b1517;
+    color: #fff;
+}
